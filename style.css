@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+    padding-top: 60px;
+}
+.container {
+    background-color: lightblue;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #e2ddd8;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+}
+h1 {
+    font-size: 35px;
+    color: black;
+    margin-bottom: 20px;
+}
+.addBtn {
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+}
+.addBtn:hover {
+    background-color: #c8502a;
+}
+
+/*-- Book Form */ 
+#bookForm {
+    background-color: #f5f0eb;
+    border: 1px solid #e2ddd8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+#bookForm input[type='text'], 
+#bookFoem input[type="number"] {
+    display: block;  /* each input on the the smae line */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #e2ddd8;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: nome;
+}
+#bookForm input:focus {
+    border-color: #c8502a;
+}
+
+#bookForm label {
+    font-size: 14px;
+    color: #1a1814;
+    margin-bottom: 16px;
+    display: block;
+}
+/* -- Submit Button -- */
+#submitBook {
+    padding: 10px 20px;
+    background: #c8502a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#submitBook:hover {
+    background: #1a1814;
+}
+
+/*--Library Grid --*/
+#library {
+    display: flex;
+    flex-wrap: wrap; /* cards wraps onto next row when full */
+    gap: 16px;
+    margin-top: 24px;
+}
+
+/*-- Book Card --*/
+.book-card {
+    background: white;
+    border: 1px solid #e2ddd8;
+    border-radius: 10px;
+    padding: 16px;
+    width: 180px; /* fixed width so all cards are uniform */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.book-card h3 {
+    font-size: 15px;
+    color: #1a1814;
+    margin: 0;
+}
+.book-card p {
+    font-size: 13px;
+    color: #9e9790;
+    margin: 0;
+}
+
+/* --- Read status tag */
+.book-card .read-status {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+.read-status .read {
+    background: #e8f5e9;
+    color: #c0392b;
+}
+
+/* --- Card button --- */
+.book-card button {
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: 1px solid #e2ddd8;
+    cursor: pointer;
+    font-size: 12px;
+    background: white;
+    transition: all 0.15s;
+}
+
+.book-card .toggle-btn:hover {
+    background: #e8f5e9;
+    border-color: #a566a7;
+    color: #2d7a35;
+}
+
+.book-card .delete-btn:hover {
+    background: #fce8e8;
+    border-color: #ef9a9a;
+    color: #c0392b;
+}
